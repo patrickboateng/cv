@@ -1,0 +1,165 @@
+\documentclass[letterpaper, 12pt]{article}
+\usepackage[margin=0.6in]{geometry} % page Layout
+\usepackage{enumitem} 
+\usepackage[hidelinks]{hyperref} % url Links
+\usepackage{fontawesome} % icons
+\usepackage{xcolor} % colors
+\usepackage{fontspec} % font specification
+\usepackage{comment} % multiline comment
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=blue,
+}
+
+\setmainfont{SourceSans3}[
+Path = ./font/,
+Extension = .ttf,
+UprightFont = *-Regular,
+BoldFont = *-Bold,
+ItalicFont = *-Italic,
+BoldItalicFont = *-BoldItalic,
+]
+
+
+%%%%% Custom Commands %%%%%%
+
+\newcommand{\cvsection}[1]{
+	
+	\section*{#1}	
+	\rule[20pt]{\linewidth}{0.5pt} % underline
+
+}
+
+\newcommand{\verticalSpace}{4pt}
+\newcommand{\itemizeMargin}{11pt}
+
+\begin{document}
+	
+	%%% Header %%%
+	
+	\begin{center}
+		
+	{\huge{\textbf{PATRICK BOATENG}}} \\ [\verticalSpace]
+	
+	P.O. Box 1694 \, \vrule \, Cantonment-Accra \\ [\verticalSpace]
+	
+	% Email
+	\faEnvelope \space \href{mailto:boatengpatrick456@gmail.com}{\underline{boatengpatrick456@gmail.com}}
+	\, \vrule \,
+	% Phone
+	\faPhone \space (+233)248253743 \\ [\verticalSpace]
+	% Github
+	\faGithub \space \href{https://www.github.com/Pato546}{\underline{patrickboateng}}
+	\, \vrule \,
+	% LinkedIn
+	\faLinkedin \space \href{https://www.linkedin.com/in/patrickboateng}{\underline{Patrick Boateng}}
+	
+	\end{center}
+	
+	% EDUCATION
+	
+	\cvsection{EDUCATION} 	
+	
+	\textbf{Bachelor's degree} \hfill \textbf{Sep 2017 - Nov 2021} \\ [\verticalSpace]
+	\textbf{Kwame Nkrumah University of Science and Technology}
+	
+	\begin{itemize}[leftmargin=\itemizeMargin]
+		
+	\item Programme: Bachelor of Science in Civil Engineering
+	\item Honor: First Class [3.757/4.0] - Scholaro GPA Calculator
+	\item Thesis: Predicting the compressive strength of concrete using machine learning techniques.
+	\item Key Courses: Introduction to Finite Element Methods \vrule \, Algebra \vrule \, Numerical Analysis \vrule \, Statistics and Probability \vrule \, Differential Equation \vrule \, Soil and Rock mechanics \vrule \, Computer Aided Design (AutoCad) \vrule \, Computer Programming (MATLAB) \vrule \, Construction Management
+	
+	\end{itemize}
+	
+	% HONORS AND AWARDS
+	
+	\cvsection{HONORS AND AWARDS}
+	
+	\begin{itemize}[leftmargin=\itemizeMargin]
+		
+		\item Provost Excellent Students Awards, College of Engineering (KNUST) in Level 300
+		\item Provost Excellent Students Awards, College of Engineering (KNUST) in Level 400
+		
+	\end{itemize}
+	
+	% WORK EXPERIENCE
+	
+	\cvsection{WORK EXPERIENCE}
+	
+	\textbf{Geotechnical Engineer} \hfill \textbf{Sep 2022 - } \\ [\verticalSpace]
+	\textbf{Heureka Consult Limited} \hfill \textbf{Full Time}
+	
+	\begin{itemize}[leftmargin=\itemizeMargin]
+		
+		\item Perform Quality Assurance and Quality Control for construction projects. (e.g. Cardinal Namdini gold mine water storage and tailings dams)
+		\item Perform geotechnical site investigation for road projects. (e.g. Accra-Ofankor road rehabilitation)
+		\item Analyzing laboratory test results and making engineering judgements.
+		
+	\end{itemize} 
+	
+	\textbf{Site Engineer} \hfill \textbf{Apr 2020 - Nov 2020} \\ [\verticalSpace]
+	\textbf{Quatran Company Limited} \hfill \textbf{Intern}
+	
+	\begin{itemize}[leftmargin=\itemizeMargin]
+		
+		\item Ensured accurate execution of structural drawings by interpreting the drawing to their understanding.
+		\item Prepare weekly reports for all works done on site.
+		\item Perform Quality Assurance and Quality Control for the construction.
+
+	\end{itemize}
+	
+	% RESEARCH EXPERIENCE
+	
+	\cvsection{RESEARCH EXPERIENCE}
+	
+	\textbf{Concrete compressive strength prediction} \hfill \textbf{2021}
+	\begin{itemize}[leftmargin=\itemizeMargin]
+		\item Developed models using different machine learning techniques to predict the 28th day compressive strength of concrete. \href{https://www.github.com/patrickboateng/strength-prediction}{\underline{Project link}}
+	\end{itemize}
+	
+	% TECHNICAL SKILLS
+	
+	\cvsection{TECHNICAL SKILLS}
+	
+	\begin{itemize}[leftmargin=\itemizeMargin]
+		\item Programming Languages: Python, C, C++
+		\item Deep Learning Frameworks: Pytorch
+		\item Machine Learning: Scikit-learn, XGBoost
+		\item Data Analysis: Pandas, Numpy
+		\item Software: Microsoft Office Excel, Latex, AutoCad
+	\end{itemize}
+	
+	% PERSONAL PROJECTS
+	
+	\cvsection{PERSONAL PROJECTS}
+	
+	\begin{itemize}[leftmargin=\itemizeMargin]
+		\item geolab: An open-source software for geotechnical engineering analysis and modelling. \href{https://www.github.com/patrickboateng/geolab}{\underline{Project link}}
+		
+		\item makepackage: A Python package for packaging python code. (\textit{Contributor})
+		\href{https://github.com/nyggus/makepackage}{\underline{Project link}}
+	\end{itemize}
+	
+	% RESEARCH INTEREST
+	
+	\cvsection{RESEARCH INTEREST}
+	
+	\begin{itemize}[leftmargin=\itemizeMargin]
+		\item 
+		\item 
+		\item 
+	\end{itemize}
+	
+	% REFERENCES
+	
+	\cvsection{REFERENCES}
+	
+	\textbf{[\href{mailto:boatengpatrick456@gmail.com}{\underline{Available upon request}}]}
+\end{document}
