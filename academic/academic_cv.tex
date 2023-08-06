@@ -6,6 +6,16 @@
 \usepackage{xcolor} % colors
 \usepackage{fontspec} % font specification
 \usepackage{comment} % multiline comment
+\usepackage{multicol} % multiple columns
+\usepackage{sectsty}
+\usepackage{ulem}
+\usepackage{ragged2e}
+
+\newcommand{\fullwidthuline}[1]{%
+	\par\noindent\uline{\hbox to \textwidth{#1\hfil}}\par%
+}
+
+\sectionfont{\fullwidthuline}
 
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
@@ -31,9 +41,8 @@ BoldItalicFont = *-BoldItalic,
 
 \newcommand{\cvsection}[1]{
 	
-	\section*{#1}	
-	\rule[20pt]{\linewidth}{0.5pt} % underline
-
+	\section*{#1}
+	%\rule[20pt]{\linewidth}{0.5pt} % underline
 }
 
 \newcommand{\verticalSpace}{4pt}
@@ -55,7 +64,7 @@ BoldItalicFont = *-BoldItalic,
 	% Phone
 	\faPhone \space (+233)248253743 \\ [\verticalSpace]
 	% Github
-	\faGithub \space \href{https://www.github.com/patrick}{\underline{patrickboateng}}
+	\faGithub \space \href{https://www.github.com/patrickboateng}{\underline{patrickboateng}}
 	\, \vrule \,
 	% LinkedIn
 	\faLinkedin \space \href{https://www.linkedin.com/in/patrickboateng}{\underline{Patrick Boateng}}
@@ -82,7 +91,7 @@ BoldItalicFont = *-BoldItalic,
 	
 	\cvsection{HONORS AND AWARDS}
 	
-	\begin{itemize}[leftmargin=\itemizeMargin, before=\vspace{-\baselineskip}]
+	\begin{itemize}[leftmargin=\itemizeMargin]
 		
 		\item Provost Excellent Students Awards, College of Engineering (KNUST) in Level 300
 		\item Provost Excellent Students Awards, College of Engineering (KNUST) in Level 400
@@ -99,37 +108,13 @@ BoldItalicFont = *-BoldItalic,
 	\begin{itemize}[leftmargin=\itemizeMargin]
 		
 		\item Performed quality assurance and quality control procedures for construction projects, including overseeing the Cardinal Namdini gold mine's water storage and tailings dams.
+		\item Generated project and laboratory reports for the client.
+		\item Conducted geotechnical site investigations for road projects, such as the Accra-Ofankor road rehabilitation.		
+		\item Analyzed laboratory test results and made engineering judgments.
 		
-		\textbf{Roles}:
+		% Add Project link
 		
-		\begin{enumerate}[label=\roman*.,leftmargin=10pt]
-			
-			\item 
-			\item
-			\item Generated laboratory reports for the client.
-			
-		\end{enumerate}
-		
-		\item Conducted geotechnical site investigations for road projects, such as the Accra-Ofankor road rehabilitation.
-		
-		\textbf{Roles}:
-		
-		\begin{enumerate}[label=\roman*.,leftmargin=10pt]
-			
-			\item Analyzed laboratory test results and made engineering judgments.
-			\item Generated project and laboratory reports for the client.
-			
-		\end{enumerate}
-		
-		\textbf{Side Projects}
-		
-		\begin{enumerate}[label=\roman*.,leftmargin=10pt]
-			
-			% Add Project link
-			
-			\item Developed a Microsoft Excel add-in capable of soil classification, accommodating both the \textbf{Unified Soil Classification System} and the \textbf{American Association of State Highway and Transportation Officials} classification systems.
-			
-		\end{enumerate}
+		\item Developed a Microsoft Excel add-in capable of soil classification, accommodating both the \textbf{Unified Soil Classification System} and the \textbf{American Association of State Highway and Transportation Officials} classification systems.	
 		
 	\end{itemize} 
 	
@@ -138,16 +123,9 @@ BoldItalicFont = *-BoldItalic,
 	
 	\begin{itemize}[leftmargin=\itemizeMargin]
 		
-		\item Conducted site supervision and implemented Quality Assurance and Quality Control measures during the construction of the solvent extraction plant for Wilmar Africa.
-		
-		\textbf{Roles}:
-		
-		\begin{enumerate}[label=\roman*.,leftmargin=10pt]
-			
-			\item Ensured precise execution of structural drawings by interpreting and comprehending the drawings accurately.
-			\item Prepared weekly progress reports summarizing all the works completed on-site.
-			
-		\end{enumerate}
+		\item Conducted site supervision and implemented Quality Assurance and Quality Control measures during the construction of the solvent extraction plant for Wilmar Africa.	
+		\item Ensured precise execution of structural drawings by interpreting and comprehending the drawings accurately.
+		\item Prepared weekly progress reports summarizing all the works completed on-site.
 
 	\end{itemize}
 	
@@ -167,7 +145,7 @@ BoldItalicFont = *-BoldItalic,
 	
 	\cvsection{TECHNICAL SKILLS}
 	
-	\begin{itemize}[leftmargin=\itemizeMargin, before=\vspace{-\baselineskip}]
+	\begin{itemize}[leftmargin=\itemizeMargin]
 		
 		\item \textbf{Programming Languages}: Python \vrule \, C \vrule \, C++
 		\item \textbf{Deep Learning Frameworks}: Pytorch
@@ -181,7 +159,7 @@ BoldItalicFont = *-BoldItalic,
 	
 	\cvsection{PERSONAL PROJECTS}
 	
-	\begin{itemize}[leftmargin=\itemizeMargin, before=\vspace{-\baselineskip}]
+	\begin{itemize}[leftmargin=\itemizeMargin]
 		
 		\item \textbf{geolab}: An open-source software for geotechnical engineering analysis and modelling. \href{https://www.github.com/patrickboateng/geolab}{\underline{\textbf{Project link}}}
 		
@@ -194,11 +172,12 @@ BoldItalicFont = *-BoldItalic,
 	
 	\cvsection{RESEARCH INTEREST}
 	
-	\begin{itemize}[leftmargin=\itemizeMargin, before=\vspace{-\baselineskip}]
+	\begin{itemize}[leftmargin=\itemizeMargin]
 		
+		\item Finite element analysis of structures
 		\item 
 		\item 
-		\item 
+		\item
 		
 	\end{itemize}
 	
@@ -206,6 +185,29 @@ BoldItalicFont = *-BoldItalic,
 	
 	\cvsection{REFERENCES}
 	
-	\textbf{[\href{mailto:boatengpatrick456@gmail.com}{\underline{Available upon request}}]}
+	%\textbf{[\href{mailto:boatengpatrick456@gmail.com}{\underline{Available upon request}}]}
+	
+	\begin{multicols}{2}
+		\textbf{Dr. Jones Owusu Twumasi} \\ [4pt]
+		Lecturer, Department of Civil Engineering \\ [4pt]
+		Kwame Nkrumah University of Science and Technology \\ [4pt]
+		\faEnvelopeSquare \space \href{mailto:jotwumasi@knust.edu.gh}{jotwumasi@knust.edu.gh} \\ [4pt]
+		\faPhone \space {+233 244306788} \\ [4pt]
+		
+		\textbf{Dr. Russel Owusu Afrifa} \\ [4pt]
+		Snr. Lecturer, Department of Civil Engineering \\ [4pt]
+		Kwame Nkrumah University of Science and Technology \\ [4pt]
+		\faEnvelopeSquare \space \href{mailto:roafrifa.coe@knust.edu.gh}{roafrifa.coe@knust.edu.gh} \\ [4pt]
+		\faPhone \space {+233 551192818} \\
+		
+		\columnbreak
+		
+		\textbf{Dr. Jack Ohene Banahene} \\ [4pt]
+		Lecturer, Department of Civil Engineering \\ [4pt]
+		Kwame Nkrumah University of Science and Technology \\ [4pt]
+		\faEnvelopeSquare \space \href{mailto:jobanahene.coe@knust.edu.gh}{jobanahene.coe@knust.edu.gh}\\[4pt]
+		\faPhone \space {+233 550766886} \\ [4pt]
+
+	\end{multicols}
 	
 \end{document}
