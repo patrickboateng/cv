@@ -1,4 +1,5 @@
 \documentclass[letterpaper, 12pt]{article}
+
 \usepackage[margin=1in]{geometry} % page Layout
 \usepackage{enumitem} % enumeration labels
 \usepackage[hidelinks]{hyperref} % url Links
@@ -9,7 +10,18 @@
 \usepackage{multicol} % multiple columns
 \usepackage{sectsty}
 \usepackage{ulem}
+\usepackage{fancyhdr}
 %\usepackage{ragged2e}
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{\footnotesize{Patrick Boateng}}
+\cfoot{}
+\rfoot{\footnotesize{page \thepage}}
+
 
 \newcommand{\fullwidthuline}[1]{%
 	\par\noindent\uline{\hbox to \textwidth{#1\hfil}}\par%
@@ -17,7 +29,6 @@
 
 \sectionfont{\fullwidthuline}
 
-\pagestyle{empty}
 \setlength{\parindent}{0pt}
 
 \hypersetup{
@@ -68,17 +79,6 @@ BoldItalicFont = *-BoldItalic,
 	
 	\end{center}
 	
-	% RESEARCH INTEREST
-	
-	\cvsection{RESEARCH INTEREST}
-	
-	\begin{itemize}[leftmargin=*]
-		
-		\item Finite element analysis of structures
-		\item Machine learning and Artificial Intelligence for design optimization
-		
-	\end{itemize}
-	
 	% EDUCATION
 	
 	\cvsection{EDUCATION} 	
@@ -95,14 +95,14 @@ BoldItalicFont = *-BoldItalic,
 	
 	\end{itemize}
 	
-	% HONORS AND AWARDS
+	% RESEARCH INTEREST
 	
-	\cvsection{HONORS AND AWARDS}
+	\cvsection{RESEARCH INTEREST}
 	
 	\begin{itemize}[leftmargin=*]
 		
-		\item Provost Excellent Students Awards, College of Engineering (KNUST) in year 3
-		\item Provost Excellent Students Awards, College of Engineering (KNUST) in year 4
+		\item Finite element analysis of structures
+		\item Machine learning and Artificial Intelligence for design optimization
 		
 	\end{itemize}
 	
@@ -142,7 +142,18 @@ BoldItalicFont = *-BoldItalic,
 		\item Conducted site supervision and implemented Quality Assurance and Quality Control measures during the construction of the solvent extraction plant for Wilmar Africa.	
 		\item Ensured precise execution of structural drawings by interpreting and comprehending the drawings accurately.
 		\item Prepared weekly progress reports summarizing all the works completed on-site.
-
+		
+	\end{itemize}
+	
+	% HONORS AND AWARDS
+	
+	\cvsection{HONORS AND AWARDS}
+	
+	\begin{itemize}[leftmargin=*]
+		
+		\item Provost Excellent Students Awards, College of Engineering (KNUST) in year 3
+		\item Provost Excellent Students Awards, College of Engineering (KNUST) in year 4
+		
 	\end{itemize}
 	
 	% RESEARCH EXPERIENCE
@@ -153,7 +164,7 @@ BoldItalicFont = *-BoldItalic,
 	
 	\begin{itemize}[leftmargin=*]
 		
-		\item Employed various machine learning techniques to develop models for predicting the 28th day compressive strength of concrete. \href{https://www.github.com/patrickboateng/strength-prediction}{\underline{\textbf{Project link}}}
+		\item Employed various machine learning techniques to develop models for predicting the 28th day compressive strength of concrete. \href{https://www.github.com/patrickboateng/compressive-strength-prediction}{\underline{\textbf{Project link}}}
 		
 	\end{itemize}
 	
