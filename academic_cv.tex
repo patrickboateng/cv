@@ -1,4 +1,4 @@
-\documentclass[letterpaper, 12pt]{article}
+\documentclass[letterpaper, 11pt]{article}
 
 \usepackage[margin=1in]{geometry} % page Layout
 \usepackage{enumitem} % enumeration labels
@@ -12,6 +12,7 @@
 \usepackage{ulem}
 \usepackage{fancyhdr}
 \usepackage{microtype}
+\usepackage{textcase} % UpperCase and LowerCase
 %\usepackage{ragged2e}
 
 \pagestyle{fancy}
@@ -31,9 +32,9 @@
 
 % \sectionfont{\fullwidthuline}
 
-\setlength{\parindent}{0pt}
+\setlength{\parindent}{0pt} %remove paragraph indent
 
-\setmainfont{SourceSans3}
+\setmainfont{RedditSans}
 
 \hypersetup{
 	colorlinks=true,
@@ -45,7 +46,6 @@
 %%%%% Custom Commands %%%%%%
 
 \newcommand{\cvsection}[1]{
-
 	\section*{#1} \vspace*{-0.8cm}%
 	\rule{\linewidth}{1.5pt}\par
 	%\rule[20pt]{\linewidth}{0.5pt} % underline
@@ -122,6 +122,8 @@
 	      efficiency and reducing resource consumption.
 
 \end{itemize}
+
+\pagebreak
 
 % WORK EXPERIENCE
 
